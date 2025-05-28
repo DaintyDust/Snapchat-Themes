@@ -3,6 +3,8 @@
   "name": "Snapchat Themes",
   "version": "1.0",
   "description": "Applies custom themes to Snapchat",
+  "author": "DaintyDust",
+  "homepage_url": "https://github.com/DaintyDust/Snapchat-Themes",
   "permissions": [
     "webRequest",
     "storage",
