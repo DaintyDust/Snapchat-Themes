@@ -6,13 +6,28 @@ A browser extension that applies custom themes to Snapchat.
 
 © 2025 DaintyDust. All rights reserved.
 
-This software is proprietary and confidential. Unauthorized copying, distribution, modification, public display, or public performance of this software is strictly prohibited.
+This software is proprietary and protected by copyright law. Use of this software or any portion thereof requires explicit written permission from the copyright holder.
+
+## Licensing
+
+This project uses a **Permission-Based Proprietary License**:
+
+- ✅ **Permitted with written permission**: Use, modification, and integration of the software or its components
+- ❌ **Prohibited without permission**: Copying, distribution, reverse engineering, or commercial use
+- 📧 **Request permission**: Contact the copyright holder with details of your intended use
+
+**Want to use this software?** Please reach out with your use case - legitimate requests are often approved!
 
 ## Legal
 
-This project is protected by copyright law. See the [LICENSE](LICENSE) file for full terms and conditions.
+This project is protected by copyright law and uses a permission-based licensing system. See the [LICENSE](LICENSE) file for complete terms and conditions.
 
-For licensing inquiries or permissions, please contact the copyright holder.
+**Need permission?** Contact the copyright holder with:
+- Description of your intended use
+- Purpose and scope of your project  
+- How you plan to credit the original work
+
+For licensing inquiries or permission requests, please contact the copyright holder.
 
 ## Disclaimer
 
@@ -20,4 +35,4 @@ This extension is not affiliated with, endorsed by, or sponsored by Snap Inc. Sn
 
 ---
 
-**NOTICE**: Unauthorized use, reproduction, or distribution of this software may result in legal action.
+**NOTICE**: This software is protected by copyright law. Unauthorized use may result in legal action, but legitimate use requests with proper permission are welcome!
