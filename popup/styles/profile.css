@@ -1,0 +1,160 @@
+.User_Profile {
+  height: 74px;
+  width: 100%;
+  font: 16px "Avenir Next", Verdana, "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  caret-color: rgb(222, 222, 222);
+  color: rgb(222, 222, 222);
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+.User_Profile.EditTheme {
+  transform: translate(-100%, 0);
+}
+
+.Profile_Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  height: 74px;
+  width: 340px;
+  box-sizing: border-box;
+  background: rgb(30, 30, 30) none repeat scroll 0% 0% / auto padding-box border-box;
+  border-block-end: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.Profile_Picture_Container {
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgb(18, 18, 18) none repeat scroll 0% 0% / auto padding-box border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.Profile_Picture_Container_2 {
+  position: relative;
+  width: 54px;
+  height: 54px;
+}
+
+.Profile_Picture {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.Friend_Emoji_Container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-size: 15px;
+  line-height: 21px;
+  width: 19px;
+  height: 19px;
+  padding: 1.5px;
+  background: rgb(30, 30, 30) none repeat scroll 0% 0% / auto padding-box border-box;
+  border-radius: 18px;
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 0px;
+}
+
+.Friend_Emoji {
+  text-shadow: none;
+}
+
+.Profile_Info_Container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 54px;
+  width: 0;
+  margin-inline-start: 10px;
+  justify-content: space-evenly;
+}
+
+.Profile_Display_Name {
+  overflow: hidden;
+  white-space: var(--names-white-space, nowrap);
+  text-overflow: ellipsis;
+  text-shadow: none;
+}
+
+.Info_Container_1 {
+  font: 12px "Avenir Next", Verdana, "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(153, 153, 153);
+}
+
+.Info_Container_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 18px;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.Info_Container_2 img[has_snapplus="false"],
+.Info_Container_2 .Dot_Separator[has_snapplus="false"] {
+  display: none;
+}
+
+.User_Name_Container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.User_Name {
+  text-shadow: none;
+}
+
+.Dot_Separator {
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.Actions_Container {
+  flex-shrink: 0;
+  align-self: center;
+  margin-inline-start: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Action_Icon {
+  display: inline-flex;
+  /* width: 36px; */
+  height: 36px;
+  opacity: 1;
+  cursor: pointer;
+}
+.Action_Icon span {
+  margin: auto;
+  padding: 8px;
+  font-size: 16px;
+}
+.Action_Icon_Background {
+  /* width: 36px; */
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(255, 255, 255, 0.2)), rgba(255, 255, 255, 0.2);
+}
+.Action_Icon_Background:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
+}
+
+.Action_Icon_Background.Round {
+  width: 36px;
+}
+
+.noDisplay {
+  display: none;
+}

@@ -1,0 +1,50 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  grid-template:
+    "title" 20%
+    "content" 1fr;
+}
+body.SettingsOpen {
+  grid-template:
+    "title" auto
+    "content" 1fr;
+}
+#top {
+  height: 100%;
+}
+#topbar {
+  height: calc(35% - 10px);
+}
+.profile {
+  height: 65%;
+}
+.User_Profile,
+.Profile_Container,
+#Friends_Container {
+  height: 100%;
+}
+#popup {
+  height: calc(80% - 40px);
+  top: 20%;
+}
+#popup > div {
+  width: 30%;
+  bottom: 40%;
+}
+
+#popup > h2 {
+  margin-top: 3%;
+}
+
+#Settings .Setting.BottomPinned {
+  width: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#Settings_Container {
+  align-items: center;
+}
+#Settings_Container .Setting {
+  width: 20%;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snapchat Themes</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
+  </head>
+  <body>
+    <div id="top">
+      <div id="topbar">
+        <h2>Snapchat Themes</h2>
+        <button id="settingsButton">
+          <img src="/images/settings.png" alt="Settings" />
+        </button>
+      </div>
+
+      <div id="profile" class="profile">
+        <div class="User_Profile">
+          <div class="Profile_Container maxWidth">
+            <div class="Profile_Picture_Container">
+              <div class="Profile_Picture_Container_2">
+                <img id="profilePicture" src="/images/Default_pfp.png" class="Profile_Picture" alt="" />
+                <div class="Friend_Emoji_Container noDisplay">
+                  <span class="Friend_Emoji">😊</span>
+                </div>
+              </div>
+            </div>
+            <div class="Profile_Info_Container">
+              <span class="Profile_Display_Name">
+                <span id="displayName">DisplayName</span>
+              </span>
+              <div class="Info_Container_1">
+                <div class="Info_Container_2">
+                  <span class="User_Name_Container">
+                    <span id="userName" class="User_Name">Username</span>
+                  </span>
+                  <span class="Dot_Separator" has_snapplus="true">·</span>
+                  <img has_snapplus="true" src="/images/SnapPlus28px.png" />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="Actions_Container">
+              <div class="Action_Icon">
+                <div class="Action_Icon_Background">
+                  <span>Show Friends</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="Settings">
+        <h3>Settings</h3>
+        <div class="Setting BottomPinned NoRemove">
+          <div class="Setting_Button Action_Icon_Background Important">
+            <button id="clearData">Clear Data</button>
+          </div>
+          <div class="Setting_Button Action_Icon_Background">
+            <button id="RefreshFriendsSettings">Refresh Friends</button>
+          </div>
+        </div>
+        <div id="Settings_Container">
+          <div class="Setting NoRemove">
+            <div class="Setting_Text">Test Popups</div>
+            <div class="flex gap">
+              <select id="testPopupSelect" class="Setting_Dropdown">
+                <option value="testPopup">Select option</option>
+                <option value="testInfo">Info</option>
+                <option value="testSuccess">Success</option>
+                <option value="testWarning">Warning</option>
+                <option value="testError">Error</option>
+                <option value="testDisclaimer">Disclaimer</option>
+                <option value="testConfirm">Confirm</option>
+              </select>
+              <div class="Setting_Button Action_Icon_Background Round">
+                <button id="testPopupBtn">></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom">
+      <div id="SearchBox_Container">
+        <div id="Searchbox" role="searchbox" tabindex="-1">
+          <div id="Inner_Searchbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="DkxOl"><path fill-rule="evenodd" clip-rule="evenodd" d="m17.17 15.75 4.54 4.54v.01c.39.39.39 1.02 0 1.41-.2.19-.45.29-.71.29-.26 0-.51-.09-.71-.29l-4.54-4.54A8.448 8.448 0 0 1 10.5 19C5.81 19 2 15.19 2 10.5 2 5.81 5.81 2 10.5 2c4.69 0 8.5 3.81 8.5 8.5 0 1.98-.69 3.8-1.83 5.25ZM10.5 4C6.92 4 4 6.92 4 10.5S6.92 17 10.5 17s6.5-2.92 6.5-6.5S14.08 4 10.5 4Z" fill="#000"></path></svg>
+            <div id="Search_Container">
+              <input dir="auto" id="searchInput" type="text" role="searchbox" placeholder="Search" size="15" spellcheck="false" aria-keyshortcuts="ctrl+k" value="" />
+            </div>
+          </div>
+        </div>
+        <div id="RefreshFriends_Container" class="Action_Icon_Background">
+          <button id="RefreshFriends">
+            <img src="/images/refresh.png" alt="Refresh Friends" />
+          </button>
+        </div>
+      </div>
+      <div id="Friends_Container"></div>
+      <div id="Themes_Container" class="EditTheme">
+        <button id="ThemesBackBtn" class="backBtn">
+          <img src="/images/back.png" alt="Back" />
+          <span>Back</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="popup">
+      <h2>Popup Title</h2>
+      <p>This is the content of the popup.</p>
+      <div>
+        <button id="confirmPopup" class="Action_Icon_Background Important">Confirm</button>
+        <button id="closePopup" class="Action_Icon_Background">Close</button>
+      </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

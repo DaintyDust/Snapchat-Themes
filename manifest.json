@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Snapchat Themes",
+  "version": "1.0",
+  "description": "Applies custom themes to Snapchat",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "tabs",
+    "windows",
+    "scripting",
+    "cookies"
+  ],
+  "host_permissions": ["*://*.snapchat.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.snapchat.com/*"],
+      "js": ["src/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "popup/popup.html?fullscreen",
+  "options_ui": {
+    "page": "popup/popup.html?fullscreen",
+    "open_in_tab": true
+  }
+}
