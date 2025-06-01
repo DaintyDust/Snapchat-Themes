@@ -1,0 +1,117 @@
+{
+  "settings": [
+    {
+      "overwrite_default": {
+        "SettingName": "Overwrite Default Theme",
+        "Type": "toggle",
+        "Default": false
+      },
+      "namecard": {
+        "SettingName": "Namecard",
+        "Type": "dropdown",
+        "DropdownOptions": [
+          { "name": "Color", "value": "color" },
+          { "name": "Gradient", "value": "gradient" },
+          { "name": "Image", "value": "image" }
+        ],
+        "Default": "color",
+        "Dropdown_Defaults": {
+          "color": "#00ccff",
+          "gradient": {
+            "startColor": "#00ccff",
+            "endColor": "#ff0000",
+            "angle": 90
+          },
+          "image": ""
+        }
+      },
+      "chatBackground": {
+        "SettingName": "Chat background",
+        "Type": "dropdown",
+        "DropdownOptions": [
+          { "name": "Color", "value": "color" },
+          { "name": "Gradient", "value": "gradient" },
+          { "name": "Image", "value": "image" }
+        ],
+        "Default": "color",
+        "Dropdown_Defaults": {
+          "color": "#00ccff",
+          "gradient": {
+            "startColor": "#00ccff",
+            "endColor": "#ff0000",
+            "angle": 90
+          },
+          "image": ""
+        }
+      },
+      "yourNameColor": {
+        "SettingName": "Your Name Color",
+        "Type": "dropdown",
+        "DropdownOptions": [
+          { "name": "Color", "value": "color" },
+          { "name": "Gradient", "value": "gradient" }
+        ],
+        "Default": "color",
+        "Dropdown_Defaults": {
+          "color": "#00ccff",
+          "gradient": {
+            "startColor": "#00ccff",
+            "endColor": "#ff0000",
+            "angle": 90
+          }
+        }
+      },
+      "otherNameColor": {
+        "SettingName": "Other Name Color",
+        "Type": "dropdown",
+        "DropdownOptions": [
+          { "name": "Color", "value": "color" },
+          { "name": "Gradient", "value": "gradient" }
+        ],
+        "Default": "color",
+        "Dropdown_Defaults": {
+          "color": "#00ccff",
+          "gradient": {
+            "startColor": "#00ccff",
+            "endColor": "#ff0000",
+            "angle": 90
+          }
+        }
+      },
+      "yourChatBubble": {
+        "SettingName": "Your Chat Bubble",
+        "Type": "dropdown",
+        "DropdownOptions": [
+          { "name": "Color", "value": "color" },
+          { "name": "Gradient", "value": "gradient" }
+        ],
+        "Default": "color",
+        "Dropdown_Defaults": {
+          "color": "#00ccff",
+          "gradient": {
+            "startColor": "#00ccff",
+            "endColor": "#ff0000",
+            "angle": 90
+          }
+        }
+      },
+      "otherChatBubble": {
+        "SettingName": "Other Chat Bubble",
+        "Type": "dropdown",
+        "DropdownOptions": [
+          { "name": "Color", "value": "color" },
+          { "name": "Gradient", "value": "gradient" }
+        ],
+        "Default": "color",
+        "Dropdown_Defaults": {
+          "color": "#00ccff",
+          "gradient": {
+            "startColor": "#00ccff",
+            "endColor": "#ff0000",
+            "angle": 90
+          }
+        }
+      }
+    }
+  ]
+}

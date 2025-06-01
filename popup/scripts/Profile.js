@@ -1,6 +1,6 @@
 import { doc } from "./utils.js";
 
-function CreateProfileElement(displayName, userName, bitmojiSelfieId, bitmojiAvatarId, friendEmoji = null, hasSnapPlus = false) {
+function CreateProfileElement(displayName, userName, bitmojiSelfieId, bitmojiAvatarId, friendEmoji = null, hasSnapPlus = false, userId) {
   if (!displayName || !userName || !bitmojiSelfieId || !bitmojiAvatarId) {
     return null;
   }
@@ -8,6 +8,7 @@ function CreateProfileElement(displayName, userName, bitmojiSelfieId, bitmojiAva
   profileElement.classList.add("User_Profile");
   profileElement.setAttribute("data-displayname", displayName);
   profileElement.setAttribute("data-username", userName);
+  profileElement.setAttribute("data-userid", userId);
 
   profileElement.innerHTML = `
     <div class="Profile_Container maxWidth">
@@ -65,17 +66,4 @@ function CreateProfileDivider(Text, Devider = false) {
   }
 }
 
-function EditTheme(profileElement) {
-  if (!profileElement) return;
-
-  const displayName = profileElement.getAttribute("data-displayname");
-  const userName = profileElement.getAttribute("data-username");
-
-  const editButton = profileElement.querySelector(".Action_Icon button");
-  editButton.addEventListener("click", () => {
-    profileElement.classList.add("EditTheme");
-    doc("Themes_Container").classList.add("EditTheme");
-  });
-}
-
-export { CreateProfileElement, CreateProfileDivider, EditTheme };
+export { CreateProfileElement, CreateProfileDivider };

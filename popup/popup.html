@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/popup.css" />
     <link rel="stylesheet" href="styles/profile.css" />
+    <link rel="stylesheet" href="styles/controls.css" />
   </head>
   <body>
     <div id="top">
@@ -100,11 +101,22 @@
         </div>
       </div>
       <div id="Friends_Container"></div>
-      <div id="Themes_Container" class="EditTheme">
-        <button id="ThemesBackBtn" class="backBtn">
-          <img src="/images/back.png" alt="Back" />
-          <span>Back</span>
-        </button>
+      <div id="Themes_Container" Selected_UserId="" class="">
+        <div id="ThemesHeader">
+          <button id="ThemesBackBtn" class="backBtn">
+            <img src="/images/back.png" alt="Back" />
+            <span>Back</span>
+          </button>
+          <div id="ThemeProfile">
+            <img id="ThemeprofilePicture" src="/images/Default_pfp.png" class="Profile_Picture" alt="" />
+            <span class="Profile_Display_Name">
+              <span id="ThemeDisplayName">DisplayName</span>
+            </span>
+          </div>
+        </div>
+        <div id="ThemeSettings">
+
+        </div>
       </div>
     </div>
 
@@ -114,9 +126,9 @@
       <div>
         <button id="confirmPopup" class="Action_Icon_Background Important">Confirm</button>
         <button id="closePopup" class="Action_Icon_Background">Close</button>
-      </div>
-    </div>
+      </div>    </div>
 
+    <script src="../debug.js"></script>
     <script type="module" src="popup.js"></script>
   </body>
 </html>

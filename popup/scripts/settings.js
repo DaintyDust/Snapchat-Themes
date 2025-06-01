@@ -1,7 +1,9 @@
+import { showConfirmPopup, closePopup, showMessagePopup, ShowErrorMessage, ShowSuccessMessage, ShowWarningMessage, ShowInfoMessage, ShowDisclaimerMessage } from "./messagePopup.js";
 import { doc } from "./utils.js";
+import { LoadFriendsList } from "./Data.js";
 
 function LoadSettings() {
-  fetch("scripts/settings.json")
+  fetch("scripts/Settings/settings.json")
     .then((response) => {
       console.log("Response:", response);
       return response.json();
@@ -54,7 +56,6 @@ function setupSettingsElements(settingsArray, userSettings) {
           if (label) {
             label.setAttribute("for", `setting_${setting.name}`);
           }
-
           checkbox.addEventListener("change", function () {
             const isChecked = this.checked;
 
@@ -72,46 +73,13 @@ function setupSettingsElements(settingsArray, userSettings) {
             });
           });
         }
-      } else if (setting.type === "color") {
-        const insertedSetting = Settings_Container.lastElementChild;
-        const colorInput = insertedSetting.querySelector('input[type="color"]');
-
-        if (colorInput) {
-          colorInput.id = `setting_${setting.name}`;
-          colorInput.value = userSettings[setting.name];
-
-          colorInput.addEventListener("change", function () {
-            const colorValue = this.value;
-
-            chrome.storage.local.get("user_settings", (data) => {
-              const updatedSettings = data.user_settings || {};
-              updatedSettings[setting.name] = colorValue;
-
-              chrome.storage.local.set({ user_settings: updatedSettings }, () => {
-                console.log(`Setting ${setting.name} updated to:`, colorValue);
-
-                if (setting.name === "themeColor") {
-                  applyThemeColor(colorValue);
-                }
-              });
-            });
-          });
-
-          applyThemeColor(userSettings[setting.name]);
-        }
       }
     }
   });
 }
 
-function applyThemeColor(color) {
-  document.documentElement.style.setProperty("--theme-color", color);
-}
-
 function ReloadSettings() {
-  if (typeof window.LoadFriendsList === "function") {
-    window.LoadFriendsList();
-  }
+  LoadFriendsList();
 }
 
 function setupPopupTesters() {
@@ -144,4 +112,4 @@ function setupPopupTesters() {
   });
 }
 
-export { LoadSettings, setupSettingsElements, applyThemeColor, ReloadSettings, setupPopupTesters };
+export { LoadSettings, setupSettingsElements, ReloadSettings, setupPopupTesters };
